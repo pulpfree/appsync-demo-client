@@ -9,9 +9,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --write '*.js'",
-    "format-code": "yarn run prettier && yarn run lint:fix",
-    "pre-commit": ["format-code", "lint-staged"]
+    "format-code": "yarn run prettier && yarn run lint:fix"
   },
+  "pre-commit": ["format-code"],
   "lint-staged": {
     "*.js": [
       "yarn run format-code",
