@@ -30,17 +30,17 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
   },
-      instructions: {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
-      },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
 })
 
 export default () => (
-  <View style={styles.container}>
-    <Text style={styles.welcome}>Welcome to React Native!</Text>
-    <Text style={styles.instructions}>To get started, edit App.js</Text>
-    <Text style={styles.instructions}>{instructions}</Text>
+    <View style={styles.container}>
+      <Text style={styles.welcome}>Welcome to React Native!</Text>
+      <Text style={styles.instructions}>To get started, edit App.js</Text>
+      <Text style={styles.instructions}>{instructions}</Text>
   </View>
 )

@@ -11,7 +11,7 @@
     "prettier": "prettier --write '*.js'",
     "format-code": "yarn run prettier && yarn run lint:fix"
   },
-  "pre-commit": ["format-code"],
+  "pre-commit": ["format-code", "test"],
   "lint-staged": {
     "*.js": [
       "yarn run format-code",
