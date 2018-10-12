@@ -8,7 +8,7 @@ it('renders without crashing', () => {
   expect(rendered).toBeTruthy()
 })
 
-test('renders correctly', () => {
+it('renders correctly', () => {
   const tree = renderer.create(<App />).toJSON()
   expect(tree).toMatchSnapshot()
 })
