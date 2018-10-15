@@ -34,50 +34,50 @@ class Customer extends Component {
     this.search.focus()
   }
 
-  handleSearch = (e) => {
-    console.log('e: ', e)
-  }
+   handleSearch = (e) => {
+     console.log('e: ', e)
+   }
 
-  render() {
-    const { navigation } = this.props
-    const customerID = navigation.getParam('customerID', 'NO-ID')
+   render() {
+     const { navigation } = this.props
+     const customerID = navigation.getParam('customerID', 'NO-ID')
 
-    return (
-      <Container>
-        <SearchBar
-          containerStyle={{ width: '100%', position: 'absolute', top: 0 }}
-          inputStyle={{ color: '#000' }}
-          lightTheme
-          onChangeText={this.handleSearch}
+     return (
+       <Container>
+         <SearchBar
+           containerStyle={{ width: '100%', position: 'absolute', top: 0 }}
+           inputStyle={{ color: '#000' }}
+           lightTheme
+           onChangeText={this.handleSearch}
           // onClear={someMethod}
-          placeholder="Enter customer last name"
-          ref={(search) => { this.search = search }}
+           placeholder="Enter customer last name"
+           ref={(search) => { this.search = search }}
           // ref={(arg) => {this.deleteBtn = arg; }}
-          showLoading
-          searchIcon={{ size: 64 }}
-        />
-        <Button
-          color={colors.$primaryBlue}
-          title="Go to Customer... again"
-          onPress={() => navigation.push('Customer')}
-        />
-        <Button
-          color={colors.$primaryBlue}
-          title="Go to Home"
-          onPress={() => navigation.navigate('Home')}
-        />
-        <Button
-          color={colors.$primaryBlue}
-          title="Go back"
-          onPress={() => navigation.goBack()}
-        />
-        <Text>
+           showLoading
+           searchIcon={{ size: 64 }}
+         />
+         <Button
+           color={colors.$primaryBlue}
+           title="Go to Customer... again"
+           onPress={() => navigation.push('Customer')}
+         />
+         <Button
+           color={colors.$primaryBlue}
+           title="Go to Home"
+           onPress={() => navigation.navigate('Home')}
+         />
+         <Button
+           color={colors.$primaryBlue}
+           title="Go back"
+           onPress={() => navigation.goBack()}
+         />
+         <Text>
           My Customer View for customerID:
-          {customerID}
-        </Text>
-      </Container>
-    )
-  }
+           {customerID}
+         </Text>
+       </Container>
+     )
+   }
 }
 Customer.propTypes = {
   navigation: PropTypes.shape().isRequired,

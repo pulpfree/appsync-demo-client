@@ -1,12 +1,10 @@
 module.exports = {
   extends: "airbnb",
   env: {
-    jest: true,
+    jest: true
   },
-  "parser": "babel-eslint",
-  "plugins": [
-    "react"
-  ],
+  parser: "babel-eslint",
+  plugins: ["react"],
   /*"ecmaFeatures": {
     "classes": true,
     "jsx": true

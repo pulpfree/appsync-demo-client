@@ -14,8 +14,7 @@
   },
   "pre-commit": [
     "precommit-msg",
-    "format-code",
-    "test"
+    "fmtcode"
   ],
   "dependencies": {
     "lodash": "4.17.11",
