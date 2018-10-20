@@ -1,7 +1,11 @@
 {
-  "name": "ReactNativeTest",
+  "name": "appsync-demo-client",
   "version": "0.0.1",
+  "description": "Client for server: appsync-demo-server",
   "private": true,
+  "repository": "https://github.com/pulpfree/appsync-demo-client",
+  "author": "Ron Dyck <rond@webbtech.net> (http://webbtech.net/)",
+  "license": "MIT",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
